@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/uky3ilp.css">
+    <link rel="stylesheet" href="src/styles/index.css">
+    <title>Squeezy – Optimized images and videos for the web</title>
+  </head>
+  <body>
+  <div class="main">
+    {{USER_DATA}}
+    <div class="logo-title">
+      <img alt="logo" src="/logo.png" class="logo"/>
+      <h1>Squeezy</h1>
+    </div>
+    <p class="desc">Squeezy is a lightweight tool that compresses and resizes images and videos into optimized formats, reducing file sizes while preserving quality for fast loading times. <span class="learn">Learn more</span></p>
+    {{AUTH_BUTTONS}}
+    <div class="drag-section">
+      <div class="drag-content">
+        <img src="/drag-image.svg" alt="drag image">
+        <p><span class="upload" id="upload-trigger">Upload</span> or drop a video or image file</p>
+        <p class="max">Max 100MB</p>
+        <input type="file" id="file-input" style="display: none;" accept="image/*,video/*" multiple>
+      </div>
+      <div class="drag-area" id="drag-area">
+      </div>
+      <p id="file-status" class="file_status">*This tool is under construction.</p>
+    </div>
+  </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

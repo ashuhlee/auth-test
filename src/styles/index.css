@@ -1,0 +1,169 @@
+.main {
+  margin: 100px auto;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+h1 {
+  font-family: "sofia-pro", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #93E0DD;
+  margin: 0;
+}
+
+p {
+  font-family: "sofia-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  color: #595959;
+}
+
+.logo {
+  width: 40px;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+button {
+  all: unset;
+  text-align: center;
+  font-family: "sofia-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  padding: 6px 16px;
+  min-width: 70px;
+  background: #7C8AFB;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+button:focus {
+  outline: 2px solid #DAE0FF;
+  outline-offset: 2px;
+}
+button:hover {
+  background: #7886f0;
+}
+
+.desc {
+  line-height: 26px;
+}
+
+.user-info button {
+  all: unset;
+  cursor: pointer;
+  text-underline-offset: 0.2em;
+  transition: 0.2s ease;
+  color: #5a69e0;
+}
+.user-info button:hover {
+  text-decoration: underline;
+  color: #4e5cbf;
+}
+.user-info {
+  align-self: flex-end;
+  text-align: right;
+  font-family: "sofia-pro", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+  color: #b8bdcc;
+}
+
+.drag-section {
+  margin-top: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.drag-content {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  z-index: 1;
+  pointer-events: none;
+  margin: 40px;
+}
+
+.drag-content img,
+.drag-content p {
+  margin: 0;
+}
+
+.drag-content .upload,
+.drag-content input {
+  pointer-events: auto;
+}
+
+.drag-area {
+  width: 100%;
+  box-sizing: border-box;
+  grid-column: 1;
+  grid-row: 1;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  background-color: #FBFCFD;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='12' ry='12' stroke='%23D2D7E5FF' stroke-width='3' stroke-dasharray='8' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+  border-radius: 12px;
+}
+
+.drag-area.is-hovered {
+  transform: scale(1.02);
+  background-color: #F8F9FF;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='12' ry='12' stroke='%237C8AFBFF' stroke-width='3' stroke-dasharray='8' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+}
+
+.file_status {
+  grid-column: 1;
+  grid-row: 2;
+  text-align: left;
+  color: #AAAFBE;
+  font-size: 15px;
+}
+
+.upload {
+  color: #7C8AFB;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  transition: 0.2s ease;
+}
+.upload:hover {
+  color: #5a69e0;
+}
+
+.max {
+  color: #C7CAD3;
+  font-size: 15px;
+}
+
+.learn {
+  color: #AAAFBE;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  transition: 0.2s ease;
+}
+.learn:hover {
+  color: #5a69e0;
+}
+
+/*# sourceMappingURL=index.css.map */
